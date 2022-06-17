@@ -40,6 +40,13 @@ public class SignIn extends AppCompatActivity {
         binding.btnSignIn.setOnClickListener(view1 -> {
             AuthenticateUser();
         });
+        binding.tvNeedAnAccount.setOnClickListener(view12 -> {
+            NavigateToSignUp();
+        });
+    }
+
+    private void NavigateToSignUp() {
+        startActivity(new Intent(this, SignUp.class));
     }
 
     private void AuthenticateUser() {
@@ -52,14 +59,18 @@ public class SignIn extends AppCompatActivity {
                         NavigateToTodayMain();
                    }
                    else {
-                       IncorrectSignInDialog();
+                      IncorrectSignInProcedure();
                    }
                 });
     }
 
-    private void IncorrectSignInDialog() {
-
+    private void IncorrectSignInProcedure() {
+        Toast.makeText(this, "The email or password that you have entered is " +
+                "incorrect. Please try again", Toast.LENGTH_SHORT).show();
+        Objects.requireNonNull(binding.etEmail.getText()).clear();
+        Objects.requireNonNull(binding.etPassword.getText()).clear();
     }
+
 
     private void CheckForUserAuthenticationStatus() {
         FirebaseUser currentUser = mAuth.getCurrentUser();
@@ -70,6 +81,6 @@ public class SignIn extends AppCompatActivity {
     }
 
     private void NavigateToTodayMain() {
-        startActivity(new Intent(this, SignUp.class));
+        startActivity(new Intent(this, TodayMain.class));
     }
 }

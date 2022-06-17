@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
-
+            android:id="@+id/etEmail"
             tools:ignore="TextContrastCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -54,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
-
+            android:id="@+id/etPassword"
             android:textColorHint="#795548"
             tools:ignore="TextContrastCheck" />
 
@@ -72,7 +72,7 @@
         android:id="@+id/btnSignIn"/>
 
     <TextView
-        android:id="@+id/tvAlreadyHaveAnAccount"
+        android:id="@+id/tvNeedAnAccountMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnSignIn"
@@ -84,13 +84,14 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sign_up"
-        android:textColor="#172EF6"
-        android:textStyle="bold"
-        android:layout_toEndOf="@+id/tvAlreadyHaveAnAccount"
         android:layout_below="@+id/btnSignIn"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
-        android:layout_marginStart="5dp"/>
+        android:layout_toEndOf="@+id/tvNeedAnAccountMessage"
+        android:text="@string/sign_up"
+        android:id="@+id/tvNeedAnAccount"
+        android:textColor="#172EF6"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>
