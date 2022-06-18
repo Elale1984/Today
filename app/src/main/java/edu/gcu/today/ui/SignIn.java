@@ -30,7 +30,7 @@ public class SignIn extends AppCompatActivity {
 
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
-
+        // check for user already signed in
         CheckForUserAuthenticationStatus();
 
         binding.btnSignIn.setOnClickListener(view1 -> AuthenticateUser());
