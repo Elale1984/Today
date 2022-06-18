@@ -1,4 +1,4 @@
-package edu.gcu.today;
+package edu.gcu.today.data;
 
 
 import com.google.firebase.database.IgnoreExtraProperties;

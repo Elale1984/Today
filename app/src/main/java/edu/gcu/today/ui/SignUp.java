@@ -1,4 +1,4 @@
-package edu.gcu.today;
+package edu.gcu.today.ui;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -19,6 +19,7 @@ import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import edu.gcu.today.data.UserHelperClass;
 import edu.gcu.today.databinding.ActivitySignUpBinding;
 
 
