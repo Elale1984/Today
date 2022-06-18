@@ -1,139 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignIn"
     android:background="#646C6C">
-
-    <TextView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/welcome_to_today"
-        android:id="@+id/tvWelcomeBack"
-        android:textSize="32sp"
-        android:textColor="@color/primaryColor"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"/>
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/oitName"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/name"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/tvWelcomeBack"
-        android:layout_marginTop="30dp"
-        android:textColorHint="@color/primaryColor">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
+        android:paddingBottom="50dp">
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:id="@+id/etName"
-            tools:ignore="TextContrastCheck" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/oitEmail"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/email"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/oitName"
-        android:layout_marginTop="30dp"
-        android:textColorHint="@color/primaryColor">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
+            android:text="@string/welcome_to_today"
+            android:id="@+id/tvWelcomeBack"
+            android:textSize="32sp"
+            android:textColor="@color/primaryColor"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/oitName"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:id="@+id/etEmail"
-            tools:ignore="TextContrastCheck" />
+            android:hint="@string/name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tvWelcomeBack"
+            android:layout_marginTop="30dp"
+            app:hintTextColor="@color/primaryColor"
+            android:textColorHint="@color/primaryColor">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:id="@+id/etName"
+                tools:ignore="TextContrastCheck" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/oitPassword"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/password"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/oitEmail"
-        android:layout_marginTop="20dp"
-        app:passwordToggleEnabled="true"
-        android:textColorHint="@color/primaryColor"
-        app:passwordToggleTint="@color/primaryColor">
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/oitEmail"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:id="@+id/etPassword"
-            android:textColorHint="#795548"
-            tools:ignore="TextContrastCheck" />
+            android:hint="@string/email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/oitName"
+            android:layout_marginTop="30dp"
+            app:hintTextColor="@color/primaryColor"
+            android:textColorHint="@color/primaryColor">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:id="@+id/etEmail"
+                tools:ignore="TextContrastCheck" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/oitReEnterPassword"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/re_enter_password"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/oitPassword"
-        android:layout_marginTop="20dp"
-        app:passwordToggleEnabled="true"
-        android:textColorHint="@color/primaryColor"
-        app:passwordToggleTint="@color/primaryColor">
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/oitPassword"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:id="@+id/etReEnterPassword"
-            android:textColorHint="#795548"
-            tools:ignore="TextContrastCheck" />
+            android:hint="@string/password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/oitEmail"
+            android:layout_marginTop="20dp"
+            app:passwordToggleEnabled="true"
+            app:hintTextColor="@color/primaryColor"
+            android:textColorHint="@color/primaryColor"
+            app:passwordToggleTint="@color/primaryColor">
 
-    </com.google.android.material.textfield.TextInputLayout>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:text="@string/sign_up_btn"
-        android:backgroundTint="@color/primaryColor"
-        android:layout_below="@+id/oitReEnterPassword"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:paddingHorizontal="50dp"
-        android:id="@+id/btnSignIn"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:id="@+id/etPassword"
+                android:textColorHint="#795548"
+                tools:ignore="TextContrastCheck" />
 
-    <TextView
-        android:id="@+id/tvNeedAnAccountMessage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btnSignIn"
-        android:layout_alignStart="@+id/btnSignIn"
-        android:layout_marginTop="5dp"
-        android:text="@string/already_have_an_account"
-        android:textColor="@color/primaryColor" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btnSignIn"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_toEndOf="@+id/tvNeedAnAccountMessage"
-        android:text="@string/sign_in"
-        android:id="@+id/tvNeedAnAccount"
-        android:textColor="#172EF6"
-        android:textStyle="bold" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/oitReEnterPassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/re_enter_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/oitPassword"
+            android:layout_marginTop="20dp"
+            app:passwordToggleEnabled="true"
+            app:hintTextColor="@color/primaryColor"
+            android:textColorHint="@color/primaryColor"
+            app:passwordToggleTint="@color/primaryColor">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:id="@+id/etReEnterPassword"
+                android:textColorHint="#795548"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/sign_up_btn"
+            android:backgroundTint="@color/primaryColor"
+            android:layout_below="@+id/oitReEnterPassword"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:paddingHorizontal="50dp"
+            android:id="@+id/btnSignIn"/>
+
+        <TextView
+            android:id="@+id/tvNeedAnAccountMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSignIn"
+            android:layout_alignStart="@+id/btnSignIn"
+            android:layout_marginTop="5dp"
+            android:text="@string/already_have_an_account"
+            android:textColor="@color/primaryColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSignIn"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/tvNeedAnAccountMessage"
+            android:text="@string/sign_in"
+            android:id="@+id/tvNeedAnAccount"
+            android:textColor="#172EF6"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
 
 
-</RelativeLayout>
+
+</ScrollView>

@@ -26,6 +26,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/tvWelcomeBack"
         android:layout_marginTop="30dp"
+        app:hintTextColor="@color/primaryColor"
         android:textColorHint="@color/primaryColor">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -33,7 +34,8 @@
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
             android:id="@+id/etEmail"
-            tools:ignore="TextContrastCheck" />
+            tools:ignore="TextContrastCheck"
+           />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -47,6 +49,7 @@
         android:layout_below="@+id/oitEmail"
         android:layout_marginTop="20dp"
         app:passwordToggleEnabled="true"
+        app:hintTextColor="@color/primaryColor"
         android:textColorHint="@color/primaryColor"
         app:passwordToggleTint="@color/primaryColor">
 
