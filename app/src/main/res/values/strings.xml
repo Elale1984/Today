@@ -7,4 +7,9 @@
     <string name="do_not_have_and_account">Do not have and account?</string>
     <string name="sign_up">Sign Up</string>
     <string name="need_an_account">Need an account?</string>
+    <string name="name">Name</string>
+    <string name="welcome_to_today">Welcome To Today</string>
+    <string name="re_enter_password">Re-Enter Password</string>
+    <string name="sign_up_btn">Sign Up</string>
+    <string name="already_have_an_account">Already have an account?</string>
 </resources>
