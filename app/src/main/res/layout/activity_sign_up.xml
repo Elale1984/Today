@@ -108,24 +108,25 @@
                 tools:ignore="TextContrastCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
+
         <Button
+            android:id="@+id/btnSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:text="@string/sign_up_btn"
-            android:backgroundTint="@color/primaryColor"
             android:layout_below="@+id/oitReEnterPassword"
-            android:layout_marginTop="20dp"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/primaryColor"
             android:paddingHorizontal="50dp"
-            android:id="@+id/btnSignUp"/>
+            android:text="@string/sign_up_btn"
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/tvNeedAnAccountMessage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/btnSignIn"
-            android:layout_alignStart="@+id/btnSignIn"
+            android:layout_below="@+id/btnSignUp"
+            android:layout_alignStart="@+id/btnSignUp"
             android:layout_marginTop="5dp"
             android:text="@string/already_have_an_account"
             android:textColor="@color/primaryColor" />
@@ -133,7 +134,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/btnSignIn"
+            android:layout_below="@+id/btnSignUp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
             android:layout_toEndOf="@+id/tvNeedAnAccountMessage"
