@@ -128,7 +128,7 @@ public class SignUp extends AppCompatActivity {
         UserHelperClass newUser = new UserHelperClass();
         newUser.setName(name);
         newUser.setEmail(email);
-        mRef.child(uID).setValue(newUser);
+        mRef.child(uID).child("user_info").setValue(newUser);
         mRef.keepSynced(true);
     }
 

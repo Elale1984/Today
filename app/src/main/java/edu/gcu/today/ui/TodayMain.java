@@ -20,6 +20,10 @@ public class TodayMain extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
 
+        DisplayTodayList();
+    }
+
+    private void DisplayTodayList() {
 
     }
 }
